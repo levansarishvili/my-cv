@@ -47,27 +47,27 @@ else {
 ## Experience
 
 - **Financial Reporting Manager**&nbsp;&nbsp;2020 - 2023
-  - _Ardi Insurance_
+  - Ardi Insurance
 - **Financial Reporting Specialist**&nbsp;&nbsp;2018 - 2020
-  - _Palitra Media Holding_
+  - Palitra Media Holding
 
 ## Education
 
 - **Tbilisi State University** &nbsp; 2013 - 2017
-  - _Bachelor's degree in Economics and Business_
+  - Bachelor's degree in Economics and Business
 
 ## Courses
 
-- **RS Shcool** - _JS/FE Course EN 2023Q4_
-- **HarvardX CS50x** - _CS50's Introduction to Computer Science_
-- **Udemy** - _Build Responsive Real-World Websites with HTML and CSS_
-- **Udemy** - _Advanced CSS and Sass_
-- **Udemy** - _The Complete JavaScript Course 2024_
-- **Udemy** - _The Ultimate React Course 2024: React, Redux & More_
-- **New Horizons Computer Learning Center** - _JavaScript and Front-End Frameworks_
-- **The Odin Project** - _Full Stack Javascript path_
+- **RS Shcool** - JS/FE Course EN 2023Q4
+- **HarvardX CS50x** - CS50's Introduction to Computer Science
+- **Udemy** - Build Responsive Real-World Websites with HTML and CSS
+- **Udemy** - Advanced CSS and Sass
+- **Udemy** - The Complete JavaScript Course 2024
+- **Udemy** - The Ultimate React Course 2024: React, Redux & More
+- **New Horizons Computer Learning Center** - JavaScript and Front-End Frameworks
+- **The Odin Project** - Full Stack Javascript path
 
 ## Languages
 
-- Georgian - _Native_
-- English - _B2_
+- Georgian - Native
+- English - B2
