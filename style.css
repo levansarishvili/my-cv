@@ -1,3 +1,35 @@
-body {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
   font-family: sans-serif;
+}
+
+body {
+  width: 1100px;
+  margin: auto;
+  padding: 20px;
+  border: 3px solid orangered;
+}
+
+.main-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-bar {
+  width: 600px;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-around;
+}
+
+li {
+  list-style: none;
 }
