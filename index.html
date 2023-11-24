@@ -4,80 +4,87 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
     <title>Levan Sarishvili - CV</title>
   </head>
   <body>
     <div class="cv-container">
-      <main class="main-content">
-        <div class="left-container">
-          <img
-            class="profile-img"
-            src="images/levani sarishvili.jpg"
-            alt="Levani Sarishvili - profile photo"
-          />
-          <h1>Levan Sarishvili</h1>
-          <section>
-            <header class="sub-header">
-              <h2>📫 Contact</h2>
-            </header>
-
-            <ul>
-              <li>🌐 Location: Tbilisi, Georgia</li>
-              <li>📞 Phone: +995 558786740</li>
-              <li>📧 E-mail: levanisarishvili322@gmail.com</li>
-              <li>🔗 GitHub: levansarishvili</li>
-              <li>🔗 Linkedin: levansarishvili</li>
-            </ul>
-          </section>
-
-          <section>
-            <header class="sub-header">
-              <h2>🎯 Skills</h2>
-            </header>
-
-            <ul>
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li>Javascript Basics</li>
-              <li>Bootstrap</li>
-              <li>React Basics</li>
-              <li>Git, GitHub</li>
-              <li>VS Code</li>
-              <li>SQL Basics</li>
-              <li>PostgreSQL</li>
-              <li>Figma, Photoshop</li>
-            </ul>
-          </section>
-
-          <section>
-            <header class="sub-header">
-              <h2>💬 Languages</h2>
-            </header>
-
-            <ul>
-              <li>Georgian - Native</li>
-              <li>English - B2</li>
-            </ul>
-          </section>
-        </div>
-        <div class="right-container">
-          <header class="header">
-            <nav class="nav-bar">
-              <ul class="nav-items">
-                <li><a href="">About me</a></li>
-                <li><a href="">Experience</a></li>
-                <li><a href="">Projects</a></li>
-                <li><a href="">Education</a></li>
-                <li><a href="">Contact</a></li>
-              </ul>
-            </nav>
+      <div class="left-container">
+        <img
+          class="profile-img"
+          src="images/LevaniSarishvili.jpg"
+          alt="Levani Sarishvili - profile photo"
+        />
+        <h1>Levan Sarishvili</h1>
+        <section class="contact">
+          <header class="sub-header">
+            <h2>📫 Contact</h2>
           </header>
-          <section>
+
+          <ul>
+            <li>Location: Tbilisi, Georgia</li>
+            <li>Phone: +995 558786740</li>
+            <li>Email: levanisarishvili322@gmail.com</li>
+            <li>GitHub: levansarishvili</li>
+            <li>Linkedin: levansarishvili</li>
+          </ul>
+        </section>
+
+        <section class="skill">
+          <header class="sub-header">
+            <h2>🎯 Skills</h2>
+          </header>
+
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Javascript Basics</li>
+            <li>Bootstrap</li>
+            <li>React Basics</li>
+            <li>Git, GitHub</li>
+            <li>VS Code</li>
+            <li>SQL Basics</li>
+            <li>PostgreSQL</li>
+            <li>Figma, Photoshop</li>
+          </ul>
+        </section>
+
+        <section class="language">
+          <header class="sub-header">
+            <h2>💬 Languages</h2>
+          </header>
+
+          <ul>
+            <li>Georgian - Native</li>
+            <li>English - B2</li>
+          </ul>
+        </section>
+      </div>
+      <div class="right-container">
+        <header class="header">
+          <nav class="nav-bar">
+            <ul class="nav-items">
+              <li><a href="">About me</a></li>
+              <li><a href="">Experience</a></li>
+              <li><a href="">Projects</a></li>
+              <li><a href="">Education</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </nav>
+        </header>
+        <main class="main-content">
+          <section class="summary">
             <header class="sub-header">
               <h2>📝 Summary</h2>
             </header>
 
-            <p>
+            <p class="summary-text">
               I am a motivated and goal-oriented person who is interested in
               front-end development. Currently, I am trying to deepen my
               knowledge in basic front-end technologies such as HTML, CSS and
@@ -88,7 +95,7 @@
             </p>
           </section>
 
-          <section>
+          <section class="experience">
             <header class="sub-header">
               <h2>💼 Experience</h2>
             </header>
@@ -109,9 +116,9 @@
             </ul>
           </section>
 
-          <section>
+          <section class="education">
             <header class="sub-header">
-              <h2>🎓 Education</h2>
+              <h2>Education</h2>
             </header>
 
             <ul>
@@ -124,7 +131,7 @@
             </ul>
           </section>
 
-          <section>
+          <section class="code-example">
             <header class="sub-header">
               <h2>💻 Code Examples</h2>
             </header>
@@ -138,8 +145,8 @@
             </code>
           </section>
 
-          <section class="sub-header">
-            <header>
+          <section class="course">
+            <header class="sub-header">
               <h2>📚 Courses</h2>
             </header>
 
@@ -164,18 +171,17 @@
               <li>The Odin Project - Full Stack Javascript path ⌛</li>
             </ul>
           </section>
-        </div>
-      </main>
-
-      <footer class="footer">
-        <a href="https://github.com/levansarishvili">My GitHub Account</a>
-        <date>November - 2023</date>
-        <img
-          class="rs-logo"
-          src="https://app.rs.school/static/images/logo-rsschool3.png"
-          alt="RS School logo"
-        />
-      </footer>
+        </main>
+      </div>
     </div>
+    <footer class="footer">
+      <a href="https://github.com/levansarishvili">My GitHub Account</a>
+      <p>November - 2023</p>
+      <img
+        class="rs-logo"
+        src="https://app.rs.school/static/images/logo-rsschool3.png"
+        alt="RS School logo"
+      />
+    </footer>
   </body>
 </html>
