@@ -20,6 +20,7 @@ body {
 .cv-container {
   background-color: rgb(237, 237, 237);
   display: flex;
+  line-height: 1.5;
 }
 
 .header {
@@ -36,15 +37,23 @@ h1 {
 h2 {
   font-size: 20px;
   margin-bottom: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.icon {
+  width: 30px;
+  /* background-color: #fff;
+  border-radius: 50%; */
 }
 
 .left-container {
   display: flex;
   flex-flow: column wrap;
-  flex: 1;
+  flex: 80px 1;
   align-items: center;
   gap: 20px;
-  padding: 20px;
+  padding: 10px;
   background-color: #444;
   color: #fff;
 }
