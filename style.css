@@ -19,8 +19,10 @@ body {
 /* MAIN CONTENT */
 .cv-container {
   background-color: rgb(237, 237, 237);
+  /* background-color: rgb(205, 197, 197); */
   display: flex;
   line-height: 1.5;
+  /* border-radius: 10px; */
 }
 
 .header {
@@ -37,8 +39,15 @@ h1 {
 h2 {
   font-size: 20px;
   margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.right-container h2 {
   display: flex;
   gap: 10px;
+}
+
+section.contact h2 {
 }
 
 .icon {
@@ -47,28 +56,43 @@ h2 {
   border-radius: 50%; */
 }
 
+.contact .icon {
+  width: 20px;
+}
+
 .left-container {
   display: flex;
   flex-flow: column wrap;
-  flex: 80px 1;
+  flex: 1;
+  align-self: flex-start;
   align-items: center;
-  gap: 20px;
-  padding: 10px;
+  height: 100vh;
+  gap: 17px;
+  padding: 20px;
   background-color: #444;
   color: #fff;
+
+  /* border-radius: 10px 0 0 10px; */
+  position: sticky;
+  top: 0;
 }
 
 .right-container {
+  /* position: relative; */
+
   display: flex;
   flex-flow: column wrap;
   flex: 3;
   gap: 20px;
-  padding: 20px;
+  padding: 20px 20px 0 20px;
 }
 
 .profile-img {
   width: 120px;
   border-radius: 50%;
+}
+
+.contact {
 }
 
 .nav-bar {
@@ -96,8 +120,20 @@ h2 {
 }
 
 li {
-  list-style: none;
+  /* list-style: none; */
   font-size: 16px;
+  margin-left: 20px;
+}
+
+header li {
+  list-style: none;
+}
+
+.contact li {
+  display: flex;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
 }
 
 a:link {
@@ -120,12 +156,17 @@ a:active {
 
 /* FOOTER */
 .footer {
+  /* position: absolute;
+  right: 0;
+  bottom: 0; */
+
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 50px;
+  height: 80px;
+  width: 805px;
 
-  background-color: #c7bfbf;
+  background-color: #2a2727;
 }
 
 .rs-logo {
