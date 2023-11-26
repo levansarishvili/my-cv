@@ -270,3 +270,13 @@ li {
 .footer .icon {
   margin-top: 15px;
 }
+
+.footer-txt {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.copyright-txt {
+  font-size: 12px;
+}
