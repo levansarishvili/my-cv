@@ -17,7 +17,7 @@ body {
 }
 
 /* MAIN CSS */
-.cv-container {
+.cv-wrapper {
   background-color: rgb(237, 237, 237);
   position: relative;
   display: flex;
