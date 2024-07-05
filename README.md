@@ -1,3 +1,3 @@
-# rsschool-cv
+# Live URL:
 
-https://levansarishvili.github.io/rsschool-cv/
+https://levansarishvili.github.io/my-cv/
