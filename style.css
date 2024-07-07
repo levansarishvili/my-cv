@@ -139,6 +139,7 @@ a:active {
   flex-direction: column;
   align-items: center;
   gap: 10rem;
+  padding: 2rem 0;
 }
 
 .content-wrapper {
@@ -326,8 +327,7 @@ a:active {
 /* ============= CSS FOR DOM MANIPULATION ============= */
 .sticky-nav {
   position: sticky;
-  top: 0;
-
+  top: 2rem;
   background-color: rgba(49, 60, 78, 0.9);
   z-index: 5;
 }
