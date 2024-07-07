@@ -30,19 +30,10 @@ navLinks.addEventListener("click", function (e) {
 
 // =========== Sticky Navigation ===========
 
-// window.addEventListener("scroll", function () {
-//   if (this.window.scrollY > 100) {
-//     navEl.classList.add("sticky-nav");
-//   } else {
-//     navEl.classList.remove("sticky-nav");
-//   }
-// });
-
 const summary = document.querySelector(".section--summary");
 const navHeight = navEl.getBoundingClientRect().height;
 const stickyNav = function (entries) {
   const [entry] = entries;
-  console.log(entry);
 
   if (!entry.isIntersecting) {
     navEl.classList.add("sticky-nav");
@@ -58,3 +49,26 @@ const summaryObserver = new IntersectionObserver(stickyNav, {
 });
 
 summaryObserver.observe(summary);
+
+// =========== Reveal Sections ===========
+const allRevealSections = document.querySelectorAll(".section--reveal");
+
+const revealSection = function (entries, observer) {
+  const [entry] = entries;
+
+  if (!entry.isIntersecting) return;
+
+  entry.target.classList.remove("section--hidden");
+  //   Stop observing
+  observer.unobserve(entry.target);
+};
+
+const sectionObserver = new IntersectionObserver(revealSection, {
+  root: null,
+  threshold: 0.15,
+});
+
+allRevealSections.forEach((section) => {
+  sectionObserver.observe(section);
+  section.classList.add("section--hidden");
+});
