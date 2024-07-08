@@ -138,15 +138,25 @@ a:active {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10rem;
   padding: 2rem 0;
 }
 
 .content-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 10rem;
   padding: 0 3rem;
+}
+
+.section--summary,
+.section--experience,
+.section--education,
+.section--course,
+.section--projects {
+  padding-top: 11rem;
+}
+
+.section--projects {
+  padding-bottom: 11rem;
 }
 
 .section__header-wrapper--main-header {
@@ -334,5 +344,5 @@ a:active {
 
 .section--hidden {
   opacity: 0;
-  transform: translateY(8rem);
+  transform: translateY(10rem);
 }
