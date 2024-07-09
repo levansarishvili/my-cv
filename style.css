@@ -280,8 +280,8 @@ a:active {
 .nav-bar {
   position: fixed;
   z-index: 2;
-  left: 0;
-  right: 0;
+  left: 3rem;
+  right: 3rem;
   top: 10rem;
 
   display: flex;
@@ -290,10 +290,10 @@ a:active {
   padding-top: 5rem;
   background-color: rgba(49, 60, 78, 0.95);
   min-height: 100vh;
-  min-width: 100%;
+  max-width: 100%;
   border-radius: 1rem;
 
-  transform: translateX(100vw);
+  transform: translateX(150vw);
 
   transition: all 1s;
 }
