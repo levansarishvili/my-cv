@@ -280,6 +280,8 @@ a:active {
 .nav-bar {
   position: fixed;
   z-index: 2;
+  left: 0;
+  right: 0;
   top: 10rem;
 
   display: flex;
