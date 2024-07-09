@@ -78,11 +78,11 @@ a:active {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .section__list__img {
-  width: 20rem;
+  width: 30rem;
   border-radius: 1rem;
   opacity: 0.8;
   cursor: pointer;
@@ -123,18 +123,18 @@ a:active {
 /* ============= MAIN CSS ============= */
 .cv-wrapper {
   background-color: rgb(237, 237, 237);
-
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  column-gap: 5rem;
-
+  display: flex;
+  flex-direction: col;
+  gap: 5rem;
+  padding: 0 3rem;
   line-height: 1.5;
-  max-width: 110rem;
+  max-width: 126rem;
   margin: 0 auto;
 }
 
 .main-wrapper {
   position: relative;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -152,11 +152,7 @@ a:active {
 .section--education,
 .section--course,
 .section--projects {
-  padding-top: 11rem;
-}
-
-.section--projects {
-  padding-bottom: 11rem;
+  padding-top: 12rem;
 }
 
 .section__header-wrapper--main-header {
@@ -230,6 +226,7 @@ a:active {
 
 /* ============= NAVIGATION ============= */
 .nav {
+  height: 6rem;
   width: 100%;
   border-radius: 8rem 1rem;
   background-color: #313c4e;
@@ -273,25 +270,25 @@ a:active {
   }
 }
 
-/* ============= ASIDE SECTION ============= */
-.aside-wrapper {
+/* ============= CONTACT SECTION ============= */
+.section--contact {
   display: flex;
-  flex-direction: column;
-  justify-content: start;
+  flex-direction: row;
 
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1.5rem;
 
   color: #fff;
-
-  position: sticky;
-  top: 0;
-  height: 100vh;
-  padding-top: 2rem;
+  padding: 2rem 0;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
 }
 
-.section--contact,
+.section--personal-info,
 .section--skills,
 .section--language {
+  max-width: 35rem;
   background-color: #313c4e;
   width: 100%;
   border-radius: 0.7rem;

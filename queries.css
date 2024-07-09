@@ -1,0 +1,24 @@
+/* Queries For Responsive Design */
+@media only screen and (width <= 960px) {
+  html {
+    font-size: 58%;
+  }
+}
+
+@media only screen and (width <= 860px) {
+  html {
+    font-size: 54%;
+  }
+}
+
+@media only screen and (width <= 768px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media only screen and (width <= 460px) {
+  .nav__links {
+    display: none;
+  }
+}

@@ -30,12 +30,11 @@ navLinks.addEventListener("click", function (e) {
 
 // =========== Sticky Navigation ===========
 
-const summary = document.querySelector(".section--summary");
-const navHeight = navEl.getBoundingClientRect().height;
+const cvContainer = document.querySelector(".cv-wrapper");
 const stickyNav = function (entries) {
   const [entry] = entries;
 
-  if (!entry.isIntersecting) {
+  if (entry.isIntersecting) {
     navEl.classList.add("sticky-nav");
   } else {
     navEl.classList.remove("sticky-nav");
@@ -44,11 +43,10 @@ const stickyNav = function (entries) {
 
 const summaryObserver = new IntersectionObserver(stickyNav, {
   root: null,
-  threshold: 0,
-  rootMargin: `-${navHeight}px`,
+  threshold: 0.1,
 });
 
-summaryObserver.observe(summary);
+summaryObserver.observe(cvContainer);
 
 // =========== Reveal Sections ===========
 const allRevealSections = document.querySelectorAll(".section--reveal");
