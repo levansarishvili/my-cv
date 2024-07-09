@@ -26,7 +26,6 @@ a:visited,
 a:active {
   text-decoration: none;
   color: #fff;
-  font-size: 1.6rem;
 }
 
 /* ============= REUSABLE CLASSES ============= */
@@ -124,21 +123,20 @@ a:active {
 .cv-wrapper {
   background-color: rgb(237, 237, 237);
   display: flex;
-  flex-direction: col;
+  flex-direction: column;
   gap: 5rem;
-  padding: 0 3rem;
+  padding: 2rem 3rem 0 3rem;
   line-height: 1.5;
-  max-width: 126rem;
+  max-width: 118rem;
   margin: 0 auto;
 }
 
 .main-wrapper {
   position: relative;
-
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 2rem 0;
+  justify-content: center;
+  padding: 0 0 2rem 0;
 }
 
 .content-wrapper {
@@ -152,7 +150,7 @@ a:active {
 .section--education,
 .section--course,
 .section--projects {
-  padding-top: 12rem;
+  padding-top: 15rem;
 }
 
 .section__header-wrapper--main-header {
@@ -226,6 +224,9 @@ a:active {
 
 /* ============= NAVIGATION ============= */
 .nav {
+  display: flex;
+  align-items: center;
+
   height: 6rem;
   width: 100%;
   border-radius: 8rem 1rem;
@@ -238,8 +239,90 @@ a:active {
   align-items: center;
 
   height: 6rem;
+  width: 100%;
 
   padding: 0 2rem;
+}
+
+.nav__item a:hover,
+.nav__item a:visited,
+.nav__item a:active,
+.nav__item a:link {
+  font-size: 1.6rem;
+}
+
+/* ============= BURGER MENU AND NAV ============= */
+.burger-menu {
+  margin-left: auto;
+  margin-right: 5rem;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.burger-menu__line {
+  width: 3.5rem;
+  height: 0.2rem;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+.top-line,
+.bottom-line {
+  transition: all 0.4s;
+}
+
+.nav-bar {
+  position: fixed;
+  z-index: 2;
+  top: 10rem;
+
+  display: flex;
+  justify-content: center;
+
+  padding-top: 5rem;
+  background-color: rgba(49, 60, 78, 0.95);
+  min-height: 100vh;
+  min-width: 100%;
+  border-radius: 1rem;
+
+  transform: translateX(100vw);
+
+  transition: all 1s;
+}
+
+.nav-bar__links {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  font-size: 2.4rem;
+}
+
+.nav-bar__item a:hover,
+.nav-bar__item a:visited,
+.nav-bar__item a:active,
+.nav-bar__item a:link {
+  font-size: 3.2rem;
+}
+
+.burger-menu--active .middle-line {
+  visibility: hidden;
+}
+.burger-menu--active .top-line {
+  transform: translateY(1rem) rotate(45deg);
+}
+.burger-menu--active .bottom-line {
+  transform: translateY(-1rem) rotate(-45deg);
+}
+.nav-bar--active {
+  display: flex;
+  transform: translateX(0);
+  /* transform: translateX(0); */
 }
 
 /* ============= NAVIGATION ANIMATIONS ============= */
@@ -281,8 +364,8 @@ a:active {
 
   color: #fff;
   padding: 2rem 0;
-  padding-top: 12rem;
-  padding-bottom: 12rem;
+  padding-top: 15rem;
+  padding-bottom: 15rem;
 }
 
 .section--personal-info,
@@ -335,11 +418,20 @@ a:active {
 .sticky-nav {
   position: sticky;
   top: 2rem;
-  background-color: rgba(49, 60, 78, 0.9);
+  background-color: rgba(49, 60, 78, 0.95);
   z-index: 5;
 }
 
 .section--hidden {
   opacity: 0;
   transform: translateY(10rem);
+}
+
+.hidden {
+  display: none;
+}
+
+.disable-scroll {
+  overflow: hidden;
+  height: 100vh;
 }
