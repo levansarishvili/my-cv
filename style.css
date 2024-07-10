@@ -88,11 +88,13 @@ a:active {
   transition: transform 0.5s;
 }
 
-.section__list__img:hover {
-  opacity: 1;
-  box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2),
-    0 0.6rem 2rem 0 rgba(0, 0, 0, 0.19);
-  transform: scale(1.1);
+@media (hover: hover) {
+  .section__list__img:hover {
+    opacity: 1;
+    box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2),
+      0 0.6rem 2rem 0 rgba(0, 0, 0, 0.19);
+    transform: scale(1.07);
+  }
 }
 
 .section--reveal {
@@ -151,6 +153,16 @@ a:active {
 .section--course,
 .section--projects {
   padding-top: 15rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+
+  height: 6rem;
+  width: 100%;
+  border-radius: 8rem 1rem;
+  background-color: #313c4e;
 }
 
 .section__header-wrapper--main-header {
@@ -277,7 +289,7 @@ a:active {
   transition: all 0.4s;
 }
 
-.nav-bar {
+/* .nav-bar {
   position: fixed;
   z-index: 2;
   left: 0;
@@ -302,15 +314,7 @@ a:active {
   display: flex;
   flex-direction: column;
   gap: 5rem;
-  font-size: 2.4rem;
-}
-
-.nav-bar__item a:hover,
-.nav-bar__item a:visited,
-.nav-bar__item a:active,
-.nav-bar__item a:link {
-  font-size: 3.2rem;
-}
+} */
 
 .burger-menu--active .middle-line {
   visibility: hidden;
@@ -321,9 +325,8 @@ a:active {
 .burger-menu--active .bottom-line {
   transform: translateY(-1rem) rotate(-45deg);
 }
-.nav-bar--active {
-  display: flex;
-  transform: translateX(0);
+.nav--open {
+  transform: translateX(0) !important;
   /* transform: translateX(0); */
 }
 

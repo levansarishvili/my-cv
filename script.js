@@ -2,8 +2,10 @@
 
 // =========== Select HTML Elements ===========
 const body = document.querySelector("body");
+const header = document.querySelector(".header");
 const navEl = document.querySelector(".nav");
-const navLinks = document.querySelector(".nav__links");
+const navLinksEl = document.querySelector(".nav__links");
+const navLinks = document.querySelectorAll(".nav__link");
 const burgerButton = document.querySelector(".burger-menu");
 
 // Navigation for burger menu
@@ -12,7 +14,7 @@ const navBarItems = document.querySelectorAll(".nav-bar__item");
 
 // =========== Smooth Scrolling ===========
 
-navLinks.addEventListener("click", function (e) {
+navLinksEl.addEventListener("click", function (e) {
   e.preventDefault();
 
   if (e.target.classList.contains("nav__link")) {
@@ -36,21 +38,21 @@ navLinks.addEventListener("click", function (e) {
 // =========== Sticky Navigation ===========
 
 const summarySec = document.querySelector(".section--summary");
-const navHeight = navEl.getBoundingClientRect().height;
+const headerHeight = header.getBoundingClientRect().height;
 const stickyNav = function (entries) {
   const [entry] = entries;
 
   if (!entry.isIntersecting) {
-    navEl.classList.add("sticky-nav");
+    header.classList.add("sticky-nav");
   } else {
-    navEl.classList.remove("sticky-nav");
+    header.classList.remove("sticky-nav");
   }
 };
 
 const summaryObserver = new IntersectionObserver(stickyNav, {
   root: null,
   threshold: 0,
-  rootMargin: `-${navHeight}px`,
+  rootMargin: `-${headerHeight}px`,
 });
 
 summaryObserver.observe(summarySec);
@@ -79,22 +81,23 @@ allRevealSections.forEach((section) => {
 });
 
 // =========== Burger Menu ===========
+
 burgerButton.addEventListener("click", function () {
   if (!burgerButton.classList.contains("burger-menu--active")) {
     burgerButton.classList.add("burger-menu--active");
-    navBar.classList.add("nav-bar--active");
+    navEl.classList.add("nav--open");
     body.classList.add("disable-scroll");
   } else {
     burgerButton.classList.remove("burger-menu--active");
-    navBar.classList.remove("nav-bar--active");
+    navEl.classList.remove("nav--open");
     body.classList.remove("disable-scroll");
   }
 });
 
-// Hide nav-bar when nav-bar item is clicked
-navBarItems.forEach((el) => {
+// Hide Nav when nav-item is clicked
+navLinks.forEach((el) => {
   el.addEventListener("click", function () {
-    navBar.classList.remove("nav-bar--active");
+    navEl.classList.remove("nav--open");
     burgerButton.classList.remove("burger-menu--active");
     body.classList.remove("disable-scroll");
   });
