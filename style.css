@@ -7,7 +7,6 @@
 
 html {
   font-family: "Ubuntu", sans-serif;
-  /* scroll-behavior: smooth; */
 
   font-size: 62.5%;
 }
@@ -158,11 +157,20 @@ a:active {
 .header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding: 0 4rem;
 
   height: 6rem;
   width: 100%;
   border-radius: 8rem 1rem;
   background-color: #313c4e;
+}
+
+.home-btn {
+  display: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .section__header-wrapper--main-header {
@@ -242,7 +250,6 @@ a:active {
   height: 6rem;
   width: 100%;
   border-radius: 8rem 1rem;
-  background-color: #313c4e;
 }
 
 .nav__links {
@@ -265,8 +272,8 @@ a:active {
 
 /* ============= BURGER MENU AND NAV ============= */
 .burger-menu {
-  margin-left: auto;
-  margin-right: 5rem;
+  /* margin-left: auto;
+  margin-right: 5rem; */
 
   background-color: transparent;
   border: none;

@@ -18,6 +18,10 @@
 }
 
 @media only screen and (width <= 640px) {
+  .header {
+    justify-content: space-between;
+  }
+
   .nav {
     position: fixed;
     z-index: 2;
@@ -33,7 +37,7 @@
     max-width: 100%;
     border-radius: 1rem;
 
-    transform: translateX(100vw);
+    transform: translateX(120vw);
     transition: all ease-in-out 0.6s;
   }
 
@@ -49,6 +53,10 @@
   .nav__item a:active,
   .nav__item a:link {
     font-size: 2.8rem;
+  }
+
+  .home-btn {
+    display: flex;
   }
 
   .burger-menu {

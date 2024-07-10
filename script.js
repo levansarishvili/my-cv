@@ -6,6 +6,7 @@ const header = document.querySelector(".header");
 const navEl = document.querySelector(".nav");
 const navLinksEl = document.querySelector(".nav__links");
 const navLinks = document.querySelectorAll(".nav__link");
+const homeButton = document.querySelector(".home-btn");
 const burgerButton = document.querySelector(".burger-menu");
 
 // Navigation for burger menu
@@ -14,11 +15,21 @@ const navBarItems = document.querySelectorAll(".nav-bar__item");
 
 // =========== Smooth Scrolling ===========
 
-navLinksEl.addEventListener("click", function (e) {
+header.addEventListener("click", function (e) {
   e.preventDefault();
 
-  if (e.target.classList.contains("nav__link")) {
-    const id = e.target.getAttribute("href");
+  // I swiched event target from img element to its parent anchor element
+  let target = e.target;
+  if (target.tagName === "IMG") {
+    target = target.parentElement;
+  }
+
+  // Check if we clicked right elements
+  if (
+    target.classList.contains("nav__link") ||
+    target.classList.contains("home-btn")
+  ) {
+    const id = target.getAttribute("href");
 
     if (id === "#") {
       // Scroll to the top of the page
