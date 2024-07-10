@@ -159,7 +159,6 @@ a:active {
   align-items: center;
   justify-content: space-between;
   padding: 0 4rem;
-
   height: 6rem;
   width: 100%;
   border-radius: 8rem 1rem;
@@ -272,9 +271,6 @@ a:active {
 
 /* ============= BURGER MENU AND NAV ============= */
 .burger-menu {
-  /* margin-left: auto;
-  margin-right: 5rem; */
-
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -296,33 +292,6 @@ a:active {
   transition: all 0.4s;
 }
 
-/* .nav-bar {
-  position: fixed;
-  z-index: 2;
-  left: 0;
-  right: 0;
-  top: 10rem;
-
-  display: flex;
-  justify-content: center;
-
-  padding-top: 5rem;
-  background-color: rgba(49, 60, 78, 0.95);
-  min-height: 100vh;
-  max-width: 100%;
-  border-radius: 1rem;
-
-  transform: translateX(100vw);
-
-  transition: all ease-in-out 0.6s;
-}
-
-.nav-bar__links {
-  display: flex;
-  flex-direction: column;
-  gap: 5rem;
-} */
-
 .burger-menu--active .middle-line {
   visibility: hidden;
 }
@@ -334,7 +303,6 @@ a:active {
 }
 .nav--open {
   transform: translateX(0) !important;
-  /* transform: translateX(0); */
 }
 
 /* ============= NAVIGATION ANIMATIONS ============= */
