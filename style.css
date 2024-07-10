@@ -380,7 +380,7 @@ a:active {
 .section--personal-info,
 .section--skills,
 .section--language {
-  max-width: 35rem;
+  max-width: 32rem;
   background-color: #313c4e;
   width: 100%;
   border-radius: 0.7rem;
