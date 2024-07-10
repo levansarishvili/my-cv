@@ -69,27 +69,27 @@ const summaryObserver = new IntersectionObserver(stickyNav, {
 summaryObserver.observe(summarySec);
 
 // =========== Reveal Sections ===========
-// const allRevealSections = document.querySelectorAll(".section--reveal");
+const allRevealSections = document.querySelectorAll(".section--reveal");
 
-// const revealSection = function (entries, observer) {
-//   const [entry] = entries;
+const revealSection = function (entries, observer) {
+  const [entry] = entries;
 
-//   if (!entry.isIntersecting) return;
+  if (!entry.isIntersecting) return;
 
-//   entry.target.classList.remove("section--hidden");
-//   //   Stop observing
-//   observer.unobserve(entry.target);
-// };
+  entry.target.classList.remove("section--hidden");
+  //   Stop observing
+  observer.unobserve(entry.target);
+};
 
-// const sectionObserver = new IntersectionObserver(revealSection, {
-//   root: null,
-//   threshold: 0.15,
-// });
+const sectionObserver = new IntersectionObserver(revealSection, {
+  root: null,
+  threshold: 0.15,
+});
 
-// allRevealSections.forEach((section) => {
-//   sectionObserver.observe(section);
-//   section.classList.add("section--hidden");
-// });
+allRevealSections.forEach((section) => {
+  sectionObserver.observe(section);
+  section.classList.add("section--hidden");
+});
 
 // =========== Burger Menu ===========
 
