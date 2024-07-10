@@ -79,6 +79,10 @@ a:active {
   gap: 3rem;
 }
 
+.section__list__img-wrapper {
+  position: relative;
+}
+
 .section__list__img {
   width: 30rem;
   border-radius: 1rem;
@@ -118,6 +122,25 @@ a:active {
 
 .section__header--skills {
   color: #fff;
+}
+
+.project-link {
+  display: flex;
+  gap: 1rem;
+}
+.project-link a:link,
+.project-link a:hover,
+.project-link a:visited,
+.project-link a:active {
+  color: #449399;
+}
+
+.project-link__desc {
+  color: #449399;
+}
+
+.project-link__icon {
+  width: 2rem;
 }
 
 /* ============= MAIN CSS ============= */
